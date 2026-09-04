@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozy Café — Good Coffee, Good Food, Good Moments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon">☕</span>
+      <span class="logo-text">Cozy Café</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#reserve" class="btn btn-primary btn-small">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#reserve" class="btn btn-primary">Order Now</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-decor hero-decor--leaf" aria-hidden="true">🌿</div>
+  <div class="hero-decor hero-decor--bean" aria-hidden="true">☕</div>
+  <div class="hero-decor hero-decor--flower" aria-hidden="true">🌸</div>
+
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">Est. in Karachi</p>
+    <h1 class="hero-title">Cozy Café</h1>
+    <p class="hero-tagline">Good Coffee. Good Food. Good Moments.</p>
+    <p class="hero-desc">A cozy little corner where freshly brewed coffee, delicious treats, and good moments come together.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+      <a href="#contact" class="btn btn-outline">Visit Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop" alt="Cozy café interior with warm lighting and wooden tables">
+      <div class="about-badge">
+        <span class="about-badge-num">10+</span>
+        <span class="about-badge-text">Years of Cozy Mornings</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-eyebrow">Our Story</p>
+      <h2>A Little Corner Made for Good Moments.</h2>
+      <p>Cozy Café started with one simple idea: coffee tastes better when you feel at home. Every cup we pour and every pastry we bake is made with care, using fresh ingredients and time-tested recipes.</p>
+      <p>Whether you're stopping by for a quick espresso, settling in with a book, or catching up with friends over cake, our space is designed to feel warm, unhurried, and a little bit magical — a place where good moments happen naturally.</p>
+      <a href="#menu" class="text-link">See what's brewing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Why Choose Us</p>
+      <h2>Everything you need for a good day</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">☕</div>
+        <h3>Fresh Coffee</h3>
+        <p>Freshly brewed throughout the day, from bright pour-overs to rich espresso.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🥐</div>
+        <h3>Freshly Baked</h3>
+        <p>Pastries and treats prepared fresh every single morning in-house.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3>Cozy Atmosphere</h3>
+        <p>A relaxing environment for friends, family, studying, or quiet time alone.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📶</div>
+        <h3>Free Wi-Fi</h3>
+        <p>Work or study comfortably while enjoying your favorite drink.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Our Menu</p>
+      <h2>Little treats worth savoring</h2>
+    </div>
+
+    <div class="menu-filters" id="menuFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coffee">Coffee</button>
+      <button class="filter-btn" data-filter="cold">Cold Drinks</button>
+      <button class="filter-btn" data-filter="desserts">Desserts</button>
+      <button class="filter-btn" data-filter="bakery">Bakery</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+      <!-- Coffee -->
+      <div class="menu-item" data-category="coffee">
+        <div class="menu-item-icon">☕</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Cappuccino</h3><span class="price">PKR 650</span></div>
+          <p>Espresso topped with steamed milk and a soft layer of foam.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div class="menu-item-icon">☕</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Latte</h3><span class="price">PKR 700</span></div>
+          <p>Smooth espresso with silky steamed milk and light foam.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div class="menu-item-icon">☕</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Americano</h3><span class="price">PKR 550</span></div>
+          <p>Bold espresso balanced with hot water for a clean finish.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="coffee">
+        <div class="menu-item-icon">☕</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Mocha</h3><span class="price">PKR 750</span></div>
+          <p>Espresso, steamed milk, and rich chocolate, lightly sweetened.</p>
+        </div>
+      </div>
+
+      <!-- Cold Drinks -->
+      <div class="menu-item" data-category="cold">
+        <div class="menu-item-icon">🥤</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Iced Latte</h3><span class="price">PKR 750</span></div>
+          <p>Chilled espresso and cold milk poured over ice.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="cold">
+        <div class="menu-item-icon">🥤</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Iced Coffee</h3><span class="price">PKR 650</span></div>
+          <p>Slow-steeped cold brew served over plenty of ice.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="cold">
+        <div class="menu-item-icon">🥤</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Smoothies</h3><span class="price">PKR 800</span></div>
+          <p>Fresh fruit blended with yogurt for a refreshing sip.</p>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-item" data-category="desserts">
+        <div class="menu-item-icon">🍰</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Chocolate Cake</h3><span class="price">PKR 900</span></div>
+          <p>Rich, moist layers with a deep chocolate ganache.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="desserts">
+        <div class="menu-item-icon">🍰</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Cheesecake</h3><span class="price">PKR 950</span></div>
+          <p>Creamy baked cheesecake on a buttery biscuit base.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="desserts">
+        <div class="menu-item-icon">🍰</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Brownie</h3><span class="price">PKR 500</span></div>
+          <p>Fudgy chocolate brownie, warm and slightly gooey.</p>
+        </div>
+      </div>
+
+      <!-- Bakery -->
+      <div class="menu-item" data-category="bakery">
+        <div class="menu-item-icon">🥐</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Croissant</h3><span class="price">PKR 450</span></div>
+          <p>Buttery, flaky, and baked fresh every morning.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="bakery">
+        <div class="menu-item-icon">🥐</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Cinnamon Roll</h3><span class="price">PKR 550</span></div>
+          <p>Soft swirled roll with cinnamon sugar and light glaze.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="bakery">
+        <div class="menu-item-icon">🥐</div>
+        <div class="menu-item-body">
+          <div class="menu-item-top"><h3>Muffin</h3><span class="price">PKR 400</span></div>
+          <p>Soft and fluffy, baked daily in a few classic flavors.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Gallery</p>
+      <h2>A peek inside Cozy Café</h2>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop" alt="Latte art in a ceramic cup">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=600&auto=format&fit=crop" alt="Assorted desserts on a table">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Fresh pastries on a wooden tray">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=600&auto=format&fit=crop" alt="Cozy café interior seating">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=600&auto=format&fit=crop" alt="Warm café decorations and plants">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Close-up of a coffee cup on a saucer">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=600&auto=format&fit=crop" alt="Brunch plate with fresh food">
+      </button>
+      <button class="gallery-item" data-full="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=600&auto=format&fit=crop" alt="Barista preparing coffee">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- gallery lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+  <img src="" alt="Enlarged gallery image" id="lightboxImg">
+</div>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Customer Love</p>
+      <h2>Sweet words from our guests</h2>
+      <p class="section-note">Sample testimonials for demonstration purposes.</p>
+    </div>
+
+    <div class="review-slider">
+      <div class="review-track" id="reviewTrack">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Such a cozy little place! The coffee and desserts were amazing."</p>
+          <p class="review-author">— Ayesha</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My favorite spot to study — great Wi-Fi, better lattes, and the friendliest staff."</p>
+          <p class="review-author">— Hamza</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The cinnamon roll alone is worth the visit. This place feels like a warm hug."</p>
+          <p class="review-author">— Zara</p>
+        </div>
+      </div>
+      <div class="review-dots" id="reviewDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION / CONTACT ===== -->
+<section class="location" id="contact">
+  <div class="container location-grid">
+    <div class="location-info">
+      <p class="section-eyebrow">Find Us</p>
+      <h2>Come say hello</h2>
+
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <div><strong>Address</strong><p>Karachi, Pakistan</p></div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <div><strong>Phone</strong><p>0300-1234567</p></div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">✉️</span>
+        <div><strong>Email</strong><p>hello@cozycafe.com</p></div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🕒</span>
+        <div>
+          <strong>Opening Hours</strong>
+          <p>Monday – Friday: 9:00 AM – 10:00 PM<br>Saturday – Sunday: 10:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+
+    <div class="map-placeholder">
+      <div class="map-placeholder-inner">
+        <span>🗺️</span>
+        <p>Map placeholder — replace with live location</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVATION FORM ===== -->
+<section class="reserve" id="reserve">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-eyebrow">Reserve a Table</p>
+      <h2>We'd love to host you</h2>
+    </div>
+
+    <form class="reserve-form" id="reserveForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name">
+          <span class="error-msg" id="err-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="error-msg" id="err-email"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX">
+          <span class="error-msg" id="err-phone"></span>
+        </div>
+        <div class="form-group">
+          <label for="people">Number of People</label>
+          <input type="number" id="people" name="people" min="1" max="20" placeholder="2">
+          <span class="error-msg" id="err-people"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date">
+          <span class="error-msg" id="err-date"></span>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time">
+          <span class="error-msg" id="err-time"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Anything we should know? (optional)"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-wide">Reserve Table</button>
+
+      <div class="form-success" id="formSuccess">Thank you! We'll get back to you soon. ☕💕</div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">☕</span>
+      <span class="logo-text">Cozy Café</span>
+      <p>A cozy little corner where good moments come together.</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="TikTok">🎵</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Cozy Café. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
